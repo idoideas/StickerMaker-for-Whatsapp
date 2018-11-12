@@ -2,7 +2,7 @@
 
 [![Get it in the Play Store](https://i.imgur.com/GcvRPKp.png)](https://play.google.com/store/apps/details?id=com.idoideas.stickermaker)
 
-<img src="https://i.imgur.com/cEvAjAN.png">
+<img src="https://i.imgur.com/cEvAjAN.png" width="370" height="181">
 
 You probably heard, or even using right now, the worldwide social messaging app. And altough it is owned by the same company, I'm not talking about Facebook or FB Messenger. I'm talking about the popular mobile app, WhatsApp.
 
@@ -27,7 +27,7 @@ Introducing ***StickerMaker for WhatsApp*** app by Idoideas, a simple way to enr
 
 ## Download
 
-You can [download the latest APK right here](), or [download the app directly from the Play Store](https://play.google.com/store/apps/details?id=com.idoideas.stickermaker).
+You can [download the latest APK right here](https://github.com/idoideas/StickerMaker-for-Whatsapp/blob/master/app/release/app-release.apk?raw=true), or [download the app directly from the Play Store](https://play.google.com/store/apps/details?id=com.idoideas.stickermaker).
 
 **Supports all Android devices, all the way back to KitKat 4.4!**
 
@@ -36,10 +36,7 @@ You can [download the latest APK right here](), or [download the app directly fr
 
 Tested on OnePlus 3T, 2018.
 
-<img src="https://i.imgur.com/lLsucbx.jpg" width="270" height="480">
-<img src="https://i.imgur.com/2kDps4R.jpg" width="270" height="480">
-<img src="https://i.imgur.com/QtzVPCr.jpg" width="270" height="480">
-<img src="https://i.imgur.com/XSJY3y8.png" width="219" height="181">
+<img src="https://i.imgur.com/lLsucbx.jpg" width="270" height="480"><img src="https://i.imgur.com/2kDps4R.jpg" width="270" height="480"><img src="https://i.imgur.com/QtzVPCr.jpg" width="270" height="480"><img src="https://i.imgur.com/XSJY3y8.png">
 
 ## Contact
 
