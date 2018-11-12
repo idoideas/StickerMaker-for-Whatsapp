@@ -4,7 +4,7 @@
 
 <img src="https://i.imgur.com/cEvAjAN.png" width="556" height="271">
 
-You probably heard, or even using right now, the worldwide social messaging app. And altough it is owned by the same company, I'm not talking about Facebook or FB Messenger. I'm talking about the popular mobile app, WhatsApp.
+You probably heard, or even using right now, the worldwide social messaging app. And although it is owned by the same company, I'm not talking about Facebook or FB Messenger. I'm talking about the popular mobile app, WhatsApp.
 
 Many people around the world are using this app on a daily basis to send simple, short messages to their friends, colleagues and family. And as of such, the WhatsApp developer team has to make the experience of using their app the best possible, and the most fun for sure.
 
