@@ -47,3 +47,6 @@ Tested on OnePlus 3T, 2018.
 * Twitter: [@idoideas](http://twitter.com/idoideas)
 * Reddit: [/u/Idoideas](https://www.reddit.com/user/idoideas)
 * Email: Idoideasmail@gmail.com
+
+
+*This project is based on [WhatsApp's Stickers project](https://github.com/whatsapp/stickers) from their Github page, and is used according to license.*
