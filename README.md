@@ -38,8 +38,7 @@ You can [download the latest APK right here](https://github.com/idoideas/Sticker
 
 Tested on OnePlus 3T, 2018.
 
-<img src="https://i.imgur.com/XSJY3y8.png" width="328" height="271">
-<img src="https://i.imgur.com/lLsucbx.jpg" width="270" height="480"><img src="https://i.imgur.com/2kDps4R.jpg" width="270" height="480"><img src="https://i.imgur.com/QtzVPCr.jpg" width="270" height="480">
+<img src="https://i.imgur.com/XSJY3y8.png" width="328" height="271"><img src="https://i.imgur.com/lLsucbx.jpg" width="270" height="480"><img src="https://i.imgur.com/2kDps4R.jpg" width="270" height="480"><img src="https://i.imgur.com/QtzVPCr.jpg" width="270" height="480">
 
 ## Contact
 
