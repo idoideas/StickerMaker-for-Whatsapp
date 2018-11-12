@@ -2,7 +2,7 @@
 
 [![Get it in the Play Store](https://i.imgur.com/GcvRPKp.png)](https://play.google.com/store/apps/details?id=com.idoideas.stickermaker)
 
-<img src="https://i.imgur.com/cEvAjAN.png" width="370" height="181">
+<img src="https://i.imgur.com/cEvAjAN.png" width="556" height="271">
 
 You probably heard, or even using right now, the worldwide social messaging app. And altough it is owned by the same company, I'm not talking about Facebook or FB Messenger. I'm talking about the popular mobile app, WhatsApp.
 
@@ -36,7 +36,7 @@ You can [download the latest APK right here](https://github.com/idoideas/Sticker
 
 Tested on OnePlus 3T, 2018.
 
-<img src="https://i.imgur.com/lLsucbx.jpg" width="270" height="480"><img src="https://i.imgur.com/2kDps4R.jpg" width="270" height="480"><img src="https://i.imgur.com/QtzVPCr.jpg" width="270" height="480"><img src="https://i.imgur.com/XSJY3y8.png">
+<img src="https://i.imgur.com/lLsucbx.jpg" width="270" height="480"><img src="https://i.imgur.com/2kDps4R.jpg" width="270" height="480"><img src="https://i.imgur.com/QtzVPCr.jpg" width="270" height="480"><img src="https://i.imgur.com/XSJY3y8.png" width="328" height="271">
 
 ## Contact
 
