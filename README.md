@@ -29,7 +29,7 @@ Introducing ***StickerMaker for WhatsApp*** by Idoideas, a simple way to enrich 
 
 ## Download
 
-You can [download the latest APK right here](https://github.com/idoideas/StickerMaker-for-Whatsapp/blob/master/app/release/app-release.apk?raw=true), or [download the app directly from the Play Store](https://play.google.com/store/apps/details?id=com.idoideas.stickermaker).
+You can [download the latest APK right here](https://github.com/idoideas/StickerMaker-for-Whatsapp/blob/master/StickerMaker-v1.0.3.apk?raw=true), or [download the app directly from the Play Store](https://play.google.com/store/apps/details?id=com.idoideas.stickermaker).
 
 **Supports all Android devices, all the way back to KitKat 4.4!**
 
