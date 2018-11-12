@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/colorAccent">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:src="@drawable/stickerbanner"
+        android:id="@+id/banner"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold|italic"
+        android:text="Made by Idoideas"
+        android:textSize="20sp"
+        android:textColor="@android:color/white"
+        android:id="@+id/madebytag"
+        android:layout_below="@id/banner"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email: Idoideasmail@gmail.com"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold|italic"
+        android:textSize="15sp"
+        android:textColor="@android:color/white"
+        android:id="@+id/emailtag"
+        android:layout_below="@id/madebytag"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="© Idoideas, 2018"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold|italic"
+        android:textSize="15sp"
+        android:textColor="@android:color/white"
+        android:id="@+id/copyright"
+        android:layout_below="@id/emailtag"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Find me also in:"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold|italic"
+        android:textSize="15sp"
+        android:textColor="@android:color/white"
+        android:layout_below="@id/copyright"
+        android:id="@+id/findmein"
+        android:layout_marginTop="20dp"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/findmein"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/redditlogo"
+            android:id="@+id/redditlogo"
+            android:foreground="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_marginEnd="10dp"/>
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/githublogo"
+            android:id="@+id/githublogo"
+            android:foreground="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_toEndOf="@id/redditlogo"
+            android:layout_marginEnd="10dp"/>
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/twitterlogo"
+            android:id="@+id/twitterlogo"
+            android:foreground="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_toEndOf="@id/githublogo"/>
+    </RelativeLayout>
+</RelativeLayout>

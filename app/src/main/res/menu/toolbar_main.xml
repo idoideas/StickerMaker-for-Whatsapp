@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_donate"
+        android:title="donate"
+        app:showAsAction="always"
+        />
+    <item
+        android:id="@+id/action_add"
+        android:icon="@drawable/sticker_3rdparty_add"
+        android:title="Add new sticker pack"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_info"
+        android:icon="@drawable/sticker_3rdparty_info"
+        android:title="About the developer"
+        app:showAsAction="always" />
+
+</menu>

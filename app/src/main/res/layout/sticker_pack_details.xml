@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:layout_marginTop="8dp"
+    android:orientation="vertical">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:layout_marginEnd="@dimen/preview_side_margin"
+        android:layout_marginLeft="@dimen/preview_side_margin"
+        android:layout_marginRight="@dimen/preview_side_margin"
+        android:layout_marginStart="@dimen/preview_side_margin">
+
+
+        <ImageView
+            android:id="@+id/tray_image"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:contentDescription="@string/tray_image_content_description"
+            android:src="@color/colorAccent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@color/colorAccent"
+            android:layout_marginStart="16dp" />
+
+        <TextView
+            android:id="@+id/pack_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_from_tray_to_name"
+            android:layout_marginStart="@dimen/margin_from_tray_to_name"
+            android:layout_marginTop="8dp"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/tray_image"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Pack Name" />
+
+        <TextView
+            android:id="@+id/author"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_from_tray_to_name"
+            android:layout_marginStart="@dimen/margin_from_tray_to_name"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toEndOf="@+id/tray_image"
+            app:layout_constraintTop_toBottomOf="@+id/pack_name"
+            tools:text="Author" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:background="?attr/selectableItemBackground"
+            android:id="@+id/add_sticker_to_pack">
+
+            <ImageView
+                android:id="@+id/plus_icon_add_sticker"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/add_button_content_description"
+                android:scaleType="center"
+                android:src="@drawable/sticker_3rdparty_add"
+                android:tint="@color/colorAccent"
+                 />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add Sticker"
+                android:layout_centerVertical="true"
+                android:textColor="@color/colorAccent"
+                android:textSize="17sp"
+                android:layout_marginEnd="16dp"
+                android:layout_toEndOf="@id/plus_icon_add_sticker"/>
+
+        </RelativeLayout>
+
+
+
+    </android.support.constraint.ConstraintLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <com.idoideas.stickermaker.WhatsAppBasedCode.BottomFadingRecyclerView
+            android:id="@+id/sticker_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:fadingEdgeLength="@dimen/fading_edge_length"
+            android:paddingEnd="@dimen/preview_side_margin"
+            android:paddingLeft="@dimen/preview_side_margin"
+            android:paddingRight="@dimen/preview_side_margin"
+            android:paddingStart="@dimen/preview_side_margin"
+            android:requiresFadingEdge="vertical" />
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:alpha="0.1"
+            android:background="#000000"
+            android:visibility="invisible"
+            tools:visibility="visible" />
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true">
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_marginEnd="@dimen/preview_side_margin"
+            android:layout_marginLeft="@dimen/preview_side_margin"
+            android:layout_marginRight="@dimen/preview_side_margin"
+            android:layout_marginStart="@dimen/preview_side_margin"
+            android:layout_height="60dp"
+            android:id="@+id/share_pack_button"
+            android:layout_gravity="bottom"
+            android:background="@drawable/btn_blue"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_weight="1">
+
+            <TextView
+                style="@style/StickerPreviewButtonText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@android:color/transparent"
+                android:clickable="false"
+                android:drawableLeft="@android:drawable/ic_menu_share"
+                android:drawablePadding="8dp"
+                android:drawableTint="@android:color/white"
+                android:drawableStart="@android:drawable/ic_menu_share"
+                android:focusable="false"
+                android:foreground="@android:color/transparent"
+                android:text="@string/share_pack" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_marginEnd="@dimen/preview_side_margin"
+            android:layout_marginLeft="@dimen/preview_side_margin"
+            android:layout_marginRight="@dimen/preview_side_margin"
+            android:layout_marginStart="@dimen/preview_side_margin"
+            android:layout_height="60dp"
+            android:id="@+id/delete_pack_button"
+            android:layout_gravity="bottom"
+            android:background="@drawable/btn_red"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_weight="1">
+
+            <TextView
+                style="@style/StickerPreviewButtonText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@android:color/transparent"
+                android:clickable="false"
+                android:drawableLeft="@android:drawable/ic_menu_delete"
+                android:drawablePadding="8dp"
+                android:drawableTint="@android:color/white"
+                android:drawableStart="@android:drawable/ic_menu_delete"
+                android:focusable="false"
+                android:foreground="@android:color/transparent"
+                android:text="@string/delete_pack" />
+        </FrameLayout>
+
+    </LinearLayout>
+
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_marginEnd="@dimen/preview_side_margin"
+        android:layout_marginLeft="@dimen/preview_side_margin"
+        android:layout_marginRight="@dimen/preview_side_margin"
+        android:layout_marginStart="@dimen/preview_side_margin"
+        android:layout_height="60dp">
+
+        <TextView
+            android:id="@+id/already_added_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/details_pack_already_added"
+            android:textColor="#9B9B9B"
+            android:textSize="14sp"
+            android:visibility="gone"
+            tools:visibility="visible" />
+
+        <FrameLayout
+            android:id="@+id/add_to_whatsapp_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@drawable/btn_green"
+            android:clickable="true"
+            android:focusable="true">
+
+            <TextView
+                style="@style/StickerPreviewButtonText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@android:color/transparent"
+                android:clickable="false"
+                android:drawableLeft="@drawable/sticker_3rdparty_wa"
+                android:drawablePadding="8dp"
+                android:drawableStart="@drawable/sticker_3rdparty_wa"
+                android:focusable="false"
+                android:foreground="@android:color/transparent"
+                android:text="@string/add_to_whatsapp" />
+        </FrameLayout>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        >
+        <com.google.android.gms.ads.AdView
+            xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/adView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            ads:adSize="BANNER"
+            ads:adUnitId="@string/admob_banner_packview_unit_id">
+        </com.google.android.gms.ads.AdView>
+    </FrameLayout>
+</LinearLayout>

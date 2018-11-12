@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">StickerMaker</string>
+    <string name="action_settings">Settings</string>
+    <string name="tray_image_content_description">Sticker Pack Tray Image</string>
+    <string name="more_info_button">More info about sticker pack</string>
+    <string name="add_to_whatsapp">Add to WhatsApp</string>
+    <string name="share_pack">Share Pack</string>
+    <string name="delete_pack">Delete Pack</string>
+    <string name="add_button_content_description">Add sticker pack to WhatsApp</string>
+    <string name="share_button_content_description">Share sticker pack to other users</string>
+    <string name="title_activity_sticker_packs_list">StickerMaker</string>
+    <string name="dot">•</string>
+    <string name="title_activity_sticker_pack_details_single_pack">Sticker Pack</string>
+    <string name="title_activity_sticker_pack_details_multiple_pack">Sticker details</string>
+    <string name="title_activity_sticker_pack_info">Info</string>
+    <string name="view_webpage">View webpage</string>
+    <string name="send_email">Send email</string>
+    <string name="privacy_policy">Privacy policy</string>
+    <string name="error_adding_sticker_pack">"Could not add this sticker pack. Please install the latest version of WhatsApp before adding sticker pack"</string>
+    <string name="error_message">Error: %s \nSee logcat for stack trace.</string>
+    <string name="title_validation_error">Error with the pack</string>
+    <string name="info_screen_tray_icon">Tray icon</string>
+    <string name="details_pack_already_added">Sticker pack added to WhatsApp</string>
+    <string name="test_device">00C4003037A3F623DA3CC00DE9B803BB</string>
+
+    <!-- Admob data -->
+    <!--
+    <string name="admob_ad_id"></string>
+    <string name="admob_banner_main_unit_id"></string>
+    <string name="admob_banner_packview_unit_id"></string>
+    <string name="admob_fullscreen_adding_pack_unit_id"></string>
+    -->
+
+    <!--Test Data-->
+
+    <string name="admob_ad_id">ca-app-pub-3940256099942544~3347511713</string>
+    <string name="admob_banner_main_unit_id">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="admob_banner_packview_unit_id">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="admob_fullscreen_adding_pack_unit_id">ca-app-pub-3940256099942544/1033173712</string>
+
+
+</resources>
