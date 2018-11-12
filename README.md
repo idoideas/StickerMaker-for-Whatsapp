@@ -12,7 +12,7 @@ We all know there are alternatives with richer messeges. Telegram, Messenger, Ki
 
 Recently, they were graceful enough to finally bring us Stickers support for the app, something many apps had before. It was a surprise to be sure, but a welcomed one. However, when I tested this feature, I realized the only way to make my own sticker pack, I need to develop a whole new Android app and have people install it from the store (or through APK, but ordinary people won't do that). So I realized a solution to that problem must be made, so any person could create and share any kind of sticker pack they want, easily and without any hassle, directly from their mobile device.
 
-Introducing ***StickerMaker for WhatsApp*** app by Idoideas, a simple way to enrich your stickers experience on WhatsApp, without the need of any programming knowledge.
+Introducing ***StickerMaker for WhatsApp*** by Idoideas, a simple way to enrich your stickers experience on WhatsApp, without the need of any programming knowledge.
 
 ## So what can you do in this app?
 
