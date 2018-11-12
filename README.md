@@ -23,7 +23,9 @@ Introducing ***StickerMaker for WhatsApp*** by Idoideas, a simple way to enrich 
 
 ## Notice!
 
-***Sticker packs created using the app and loaded using the app require the app to stay installed on the device and loaded on it if you want to use them. If you happen to remove the app from your device, the sticker packs will be removed from your WhatsApp client and your packs will be lost if weren't shared.***
+***Sticker packs created using the app and loaded using the app require the app to stay installed on the device and loaded on it if you want to use them.***
+
+**If you happen to remove the app from your device, the sticker packs will be removed from your WhatsApp client and your packs will be lost if weren't shared.***
 
 ## Download
 
@@ -36,7 +38,8 @@ You can [download the latest APK right here](https://github.com/idoideas/Sticker
 
 Tested on OnePlus 3T, 2018.
 
-<img src="https://i.imgur.com/lLsucbx.jpg" width="270" height="480"><img src="https://i.imgur.com/2kDps4R.jpg" width="270" height="480"><img src="https://i.imgur.com/QtzVPCr.jpg" width="270" height="480"><img src="https://i.imgur.com/XSJY3y8.png" width="328" height="271">
+<img src="https://i.imgur.com/XSJY3y8.png" width="328" height="271">
+<img src="https://i.imgur.com/lLsucbx.jpg" width="270" height="480"><img src="https://i.imgur.com/2kDps4R.jpg" width="270" height="480"><img src="https://i.imgur.com/QtzVPCr.jpg" width="270" height="480">
 
 ## Contact
 
