@@ -17,8 +17,8 @@ Introducing ***StickerMaker for WhatsApp*** by Idoideas, a simple way to enrich 
 ## So what can you do in this app?
 
 * Create and organize your very own sticker packs by pack name and creator.
-* Share your newly created packs to your friends using WhatsApp itself, as easily as clicking a button.
-* Load your friends' original packs to your WhatsApp client by sharing the files received to the app.
+* Share your newly created packs to your friends using WhatsApp itself as Zip files, as easily as clicking a button.
+* Load your friends' original packs to your WhatsApp client by sharing the files received to the app. No need of installing additional apps for additional packs.
 * Modify packs that were created using the app to your liking!
 
 ## Notice!
