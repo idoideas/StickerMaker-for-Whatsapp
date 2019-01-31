@@ -27,6 +27,7 @@ public abstract class BaseActivity extends AppCompatActivity {
     public static final class MessageDialogFragment extends DialogFragment {
         private static final String ARG_TITLE_ID = "title_id";
         private static final String ARG_MESSAGE = "message";
+        public Context mContext;
 
         public static DialogFragment newInstance(@StringRes int titleId, String message) {
             DialogFragment fragment = new MessageDialogFragment();
@@ -40,10 +41,11 @@ public abstract class BaseActivity extends AppCompatActivity {
         @NonNull
         @Override
         public Dialog onCreateDialog(Bundle savedInstanceState) {
-            @StringRes final int title = getArguments().getInt(ARG_TITLE_ID);
-            String message = getArguments().getString(ARG_MESSAGE);
+            // Avoiding a NPE on getInt(), getString() and getActivity() method
+            @StringRes final int title = getArguments() != null ? getArguments().getInt(ARG_TITLE_ID) : 0;
+            String message = getArguments() != null ? getArguments().getString(ARG_MESSAGE) : null;
 
-            AlertDialog.Builder dialogBuilder = new AlertDialog.Builder(getActivity())
+            AlertDialog.Builder dialogBuilder = new AlertDialog.Builder(mContext.getApplicationContext())
                     .setMessage(message)
                     .setCancelable(true)
                     .setPositiveButton(android.R.string.ok, new DialogInterface.OnClickListener() {
