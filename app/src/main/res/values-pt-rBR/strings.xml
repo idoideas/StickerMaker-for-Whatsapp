@@ -60,4 +60,7 @@
     <string name="deleting_this_sticker_will_also_remove">A exclusão dessa figurinhas também a removerá do seu aplicativo do WhatsApp.</string>
     <string name="in_order_to_be_applied">Para ser adicionado ao WhatsApp, o pacote de figurinhas deve ter pelo menos 3 figurinhas. Adicione mais figurinhas primeiro.</string>
     <string name="to_add_new_sticker">Para adicionar um novo pacote de figurinhas clique aqui</string>
+    <string name="are_you_sure">Você tem certeza?</string>
+    <string name="deleting_this_package_will_also_removeit">A exclusão deste pacote também o removerá do seu aplicativo do WhatsApp.</string>
+    <string name="confirm">Confirmar</string>
 </resources>

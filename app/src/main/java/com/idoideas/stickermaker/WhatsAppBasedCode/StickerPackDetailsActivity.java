@@ -158,7 +158,7 @@ public class StickerPackDetailsActivity extends BaseActivity {
                                 dialogInterface.dismiss();
                             }
                         })
-                        .setPositiveButton("Confirm", new DialogInterface.OnClickListener() {
+                        .setPositiveButton(getString(R.string.confirm), new DialogInterface.OnClickListener() {
                             @Override
                             public void onClick(DialogInterface dialogInterface, int i) {
                                 dialogInterface.dismiss();
@@ -167,11 +167,11 @@ public class StickerPackDetailsActivity extends BaseActivity {
                                 Intent intent = new Intent(StickerPackDetailsActivity.this, StickerPackListActivity.class);
                                 intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
                                 startActivity(intent);
-                                Toast.makeText(StickerPackDetailsActivity.this, "Sticker Pack deleted", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(StickerPackDetailsActivity.this, getString(R.string.sticker_pack_deleted), Toast.LENGTH_SHORT).show();
                             }
                         }).create();
-                alertDialog.setTitle("Are you sure?");
-                alertDialog.setMessage("Deleting this package will also remove it from your WhatsApp app.");
+                alertDialog.setTitle(getString(R.string.are_you_sure));
+                alertDialog.setMessage(getString(R.string.deleting_this_package_will_also_removeit));
                 alertDialog.show();
             }
         });

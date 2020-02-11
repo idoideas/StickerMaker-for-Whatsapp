@@ -81,7 +81,7 @@ public class StickerPreviewAdapter extends RecyclerView.Adapter<StickerPreviewVi
                                 dialogInterface.dismiss();
                             }
                         })
-                        .setPositiveButton("Confirm", new DialogInterface.OnClickListener() {
+                        .setPositiveButton(thisContext.getString(R.string.confirm), new DialogInterface.OnClickListener() {
                             @Override
                             public void onClick(DialogInterface dialogInterface, int i) {
                                 if(stickerPack.getStickers().size()>3 || !WhitelistCheck.isWhitelisted(thisContext, stickerPack.getIdentifier())){

@@ -42,6 +42,7 @@ public class NewUserIntroActivity extends IntroActivity {
                 .scrollable(false)
                 .build());
 
+/*
         if(!checkIfBatteryOptimizationIgnored() && Build.VERSION.SDK_INT >= Build.VERSION_CODES.M){
             addSlide(new SimpleSlide.Builder()
                     .title(R.string.We_recognized)
@@ -59,6 +60,7 @@ public class NewUserIntroActivity extends IntroActivity {
                     })
                     .build());
         }
+*/
 
         int permission = ActivityCompat.checkSelfPermission(this, Manifest.permission.WRITE_EXTERNAL_STORAGE);
 

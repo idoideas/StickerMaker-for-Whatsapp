@@ -436,8 +436,6 @@ public class StickerPackListActivity extends BaseActivity {
         buttonLayoutParams.setMargins(50, 0, 50, 10);
         nameBox.setLayoutParams(buttonLayoutParams);
         nameBox.setHint(getString(R.string.pack_name));
-        nameBox.setInputType(InputType.TYPE_TEXT_FLAG_AUTO_COMPLETE);
-        nameBox.setInputType(InputType.TYPE_TEXT_FLAG_AUTO_COMPLETE);
 
         layout.addView(nameBox);
 
@@ -447,7 +445,6 @@ public class StickerPackListActivity extends BaseActivity {
         }
         creatorBox.setLines(1);
         creatorBox.setLayoutParams(buttonLayoutParams);
-        creatorBox.setInputType(InputType.TYPE_TEXT_FLAG_AUTO_COMPLETE);
         creatorBox.setHint(getString(R.string.creator));
         layout.addView(creatorBox);
 

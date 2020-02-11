@@ -82,5 +82,8 @@
     <string name="admob_banner_main_unit_id" translatable="false">ca-app-pub-3940256099942544/6300978111</string>
     <string name="admob_banner_packview_unit_id" translatable="false">ca-app-pub-3940256099942544/6300978111</string>
     <string name="admob_fullscreen_adding_pack_unit_id" translatable="false">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="are_you_sure">Are you sure?</string>
+    <string name="deleting_this_package_will_also_removeit">Deleting this package will also remove it from your WhatsApp app.</string>
+    <string name="confirm">Confirm</string>
 
 </resources>
