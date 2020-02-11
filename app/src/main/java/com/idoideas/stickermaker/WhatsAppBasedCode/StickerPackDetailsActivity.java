@@ -134,8 +134,8 @@ public class StickerPackDetailsActivity extends BaseActivity {
                                     dialogInterface.dismiss();
                                 }
                             }).create();
-                    alertDialog.setTitle("Invalid Action");
-                    alertDialog.setMessage("In order to be applied to WhatsApp, the sticker pack must have at least 3 stickers. Please add more stickers first.");
+                    alertDialog.setTitle(getString(R.string.invalid_action));
+                    alertDialog.setMessage(getString(R.string.in_order_to_be_applied));
                     alertDialog.show();
                 }
             }

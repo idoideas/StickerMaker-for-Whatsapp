@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:textStyle="bold|italic"
-        android:text="Made by Idoideas"
+        android:text="@string/made_by_idoideas"
         android:textSize="20sp"
         android:textColor="@android:color/white"
         android:id="@+id/madebytag"
@@ -43,7 +43,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Find me also in:"
+        android:text="@string/find_me_also_in"
         android:layout_centerHorizontal="true"
         android:textStyle="bold|italic"
         android:textSize="15sp"

@@ -225,8 +225,8 @@ public class StickerPackListActivity extends BaseActivity {
                                 dialogInterface.dismiss();
                             }
                         }).create();
-                alertDialog.setTitle("Invalid Action");
-                alertDialog.setMessage("In order to be applied to WhatsApp, the sticker pack must have at least 3 stickers. Please add more stickers first.");
+                alertDialog.setTitle(context.getString(R.string.invalid_action));
+                alertDialog.setMessage(getString(R.string.in_order_to_be_applied));
                 alertDialog.show();
             }
         }
@@ -278,7 +278,7 @@ public class StickerPackListActivity extends BaseActivity {
                     .setDelayMillis(500)
                     .enableFadeAnimation(true)
                     .performClick(true)
-                    .setInfoText("To add new sticker packs, click here.")
+                    .setInfoText(getString(R.string.to_add_new_sticker))
                     .setShape(ShapeType.CIRCLE)
                     .setTarget(findViewById(R.id.action_add))
                     .setUsageId("intro_card") //THIS SHOULD BE UNIQUE ID
@@ -405,7 +405,7 @@ public class StickerPackListActivity extends BaseActivity {
             case 1:
                 if (grantResults[0] != PackageManager.PERMISSION_GRANTED) {
                     AlertDialog alertDialog = new AlertDialog.Builder(this)
-                            .setPositiveButton("Let's Go", new DialogInterface.OnClickListener() {
+                            .setPositiveButton(getString(R.string.lets_go), new DialogInterface.OnClickListener() {
                                 @Override
                                 public void onClick(DialogInterface dialogInterface, int i) {
                                     verifyStoragePermissions(StickerPackListActivity.this);
@@ -424,8 +424,8 @@ public class StickerPackListActivity extends BaseActivity {
     private void addNewStickerPackInInterface(){
 
         AlertDialog.Builder dialog = new AlertDialog.Builder(this);
-        dialog.setTitle("Create New Sticker Pack");
-        dialog.setMessage("Please specify title and creator for the pack.");
+        dialog.setTitle(getString(R.string.create_new_pack));
+        dialog.setMessage(getString(R.string.name_creator));
 
         LinearLayout layout = new LinearLayout(this);
         layout.setOrientation(LinearLayout.VERTICAL);
@@ -435,25 +435,27 @@ public class StickerPackListActivity extends BaseActivity {
         LinearLayout.LayoutParams buttonLayoutParams = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT);
         buttonLayoutParams.setMargins(50, 0, 50, 10);
         nameBox.setLayoutParams(buttonLayoutParams);
-        nameBox.setHint("Pack Name");
+        nameBox.setHint(getString(R.string.pack_name));
         nameBox.setInputType(InputType.TYPE_TEXT_FLAG_AUTO_COMPLETE);
+        nameBox.setInputType(InputType.TYPE_TEXT_FLAG_AUTO_COMPLETE);
+
         layout.addView(nameBox);
 
         final EditText creatorBox = new EditText(this);
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-            creatorBox.setAutofillHints("name");
+            creatorBox.setAutofillHints(getString(R.string.name));
         }
         creatorBox.setLines(1);
         creatorBox.setLayoutParams(buttonLayoutParams);
         creatorBox.setInputType(InputType.TYPE_TEXT_FLAG_AUTO_COMPLETE);
-        creatorBox.setHint("Creator");
+        creatorBox.setHint(getString(R.string.creator));
         layout.addView(creatorBox);
 
         dialog.setView(layout);
 
         dialog.setPositiveButton("OK", null);
 
-        dialog.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+        dialog.setNegativeButton(getString(R.string.cancel), new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int id) {
                 dialog.cancel();
             }
@@ -469,11 +471,11 @@ public class StickerPackListActivity extends BaseActivity {
             @Override
             public void onClick(View view) {
                 if(TextUtils.isEmpty(nameBox.getText())){
-                    nameBox.setError("Package name is required!");
+                    nameBox.setError(getString(R.string.name_required));
                 }
 
                 if(TextUtils.isEmpty(creatorBox.getText())){
-                    creatorBox.setError("Creator is required!");
+                    creatorBox.setError(getString(R.string.creator_required));
                 }
 
                 if(!TextUtils.isEmpty(nameBox.getText()) && !TextUtils.isEmpty(creatorBox.getText())) {
@@ -495,10 +497,10 @@ public class StickerPackListActivity extends BaseActivity {
 
     private void createDialogForPickingIconImage(EditText nameBox, EditText creatorBox){
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setTitle("Pick your pack's icon image");
-        builder.setMessage("Now you will pick the new sticker pack's icon image.")
+        builder.setTitle(getString(R.string.pick_icon_image));
+        builder.setMessage(getString(R.string.pick_new_icon))
                 .setCancelable(false)
-                .setPositiveButton("Let's go", new DialogInterface.OnClickListener() {
+                .setPositiveButton(getString(R.string.lets_go), new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int id) {
                         dialog.dismiss();
                         openFileTray(nameBox.getText().toString(), creatorBox.getText().toString());
@@ -569,7 +571,7 @@ public class StickerPackListActivity extends BaseActivity {
             @Override
             public void onConsumeResponse(@BillingClient.BillingResponse int responseCode, String outToken) {
                 if (responseCode == BillingClient.BillingResponse.OK) {
-                    Toast.makeText(getApplicationContext(), "Thank you so much for your donation!", Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(), getString(R.string.thack_for_donation), Toast.LENGTH_LONG).show();
                 }
             }};
         if (purchasesResult!=null){

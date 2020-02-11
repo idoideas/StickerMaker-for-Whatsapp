@@ -50,7 +50,8 @@ public class StickerPackListAdapter extends RecyclerView.Adapter<StickerPackList
     public void onBindViewHolder(@NonNull final StickerPackListItemViewHolder viewHolder, final int index) {
         StickerPack pack = stickerPacks.get(index);
         final Context context = viewHolder.publisherView.getContext();
-        viewHolder.publisherView.setText("by " + pack.publisher);
+        String feito_por = context.getString(R.string.by) + " " + pack.publisher;
+        viewHolder.publisherView.setText(feito_por);
         //viewHolder.filesizeView.setText(Formatter.formatShortFileSize(context, pack.getTotalSize()));
 
         viewHolder.titleView.setText(pack.name);
