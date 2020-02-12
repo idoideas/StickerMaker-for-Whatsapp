@@ -74,4 +74,6 @@
     <string name="three_dollar">Doe 3 dólares</string>
     <string name="acess_permission_denied">Reconhecemos que você negou a permissão de acesso ao armazenamento para este aplicativo.</string>
     <string name="to_wrok_better">Para que este aplicativo funcione, é necessário acesso ao armazenamento.</string>
+    <string name="traduzido_e_adaptado_por">Traduzido e adaptado por:</string>
+    <string name="junior_obom_canal_paradoxo">Junior Obom | Canal Paradoxo</string>
 </resources>

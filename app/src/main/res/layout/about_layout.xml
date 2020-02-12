@@ -3,6 +3,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:background="@color/colorAccent">
+
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="150dp"
@@ -53,6 +54,7 @@
         android:layout_marginTop="20dp"/>
 
     <RelativeLayout
+        android:id="@+id/layoutContact"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/findmein"
@@ -89,4 +91,34 @@
             android:focusable="true"
             android:layout_toEndOf="@id/githublogo"/>
     </RelativeLayout>
+
+    <VideoView
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/white" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold|italic"
+        android:text="@string/traduzido_e_adaptado_por"
+        android:textSize="20sp"
+        android:textColor="@android:color/white"
+        android:id="@+id/madebytag2"
+        android:layout_below="@id/layoutContact"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:text="@string/junior_obom_canal_paradoxo"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold|italic"
+        android:textSize="15sp"
+        android:textColor="@android:color/white"
+        android:id="@+id/emailtag2"
+        android:layout_below="@id/madebytag2"/>
+
 </RelativeLayout>

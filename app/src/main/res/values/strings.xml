@@ -95,5 +95,7 @@
     <string name="three_dollar">3_dollar_donation</string>
     <string name="acess_permission_denied">We\'ve recognized you denied the storage access permission for this app.</string>
     <string name="to_wrok_better">In order for this app to work, storage access is required.</string>
+    <string name="traduzido_e_adaptado_por">Traduzido e adaptado por:</string>
+    <string name="junior_obom_canal_paradoxo">Junior Obom | Canal Paradoxo</string>
 
 </resources>
