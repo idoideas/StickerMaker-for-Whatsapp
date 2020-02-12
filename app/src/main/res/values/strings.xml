@@ -85,5 +85,15 @@
     <string name="are_you_sure">Are you sure?</string>
     <string name="deleting_this_package_will_also_removeit">Deleting this package will also remove it from your WhatsApp app.</string>
     <string name="confirm">Confirm</string>
+    <string name="thank_you_for_donation">Thank you for donation!</string>
+    <string name="we_appreciate_your_support">We appreciate your support in great apps and open-source projects.  How much would you like to donate?</string>
+    <string name="a_sandwich">A Sandwich - 5$</string>
+    <string name="five_dollar">5_dollar_donation</string>
+    <string name="a_piece_of_gum">A Piece of Gum - 1$</string>
+    <string name="one_dollar">1_dollar_donation</string>
+    <string name="a_coffe">A Coffee - 3$</string>
+    <string name="three_dollar">3_dollar_donation</string>
+    <string name="acess_permission_denied">We\'ve recognized you denied the storage access permission for this app.</string>
+    <string name="to_wrok_better">In order for this app to work, storage access is required.</string>
 
 </resources>

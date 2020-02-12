@@ -331,35 +331,35 @@ public class StickerPackListActivity extends BaseActivity {
             alertDialog.show();
         } else if (item.getItemId() == R.id.action_donate){
             AlertDialog.Builder builder = new AlertDialog.Builder(this);
-            builder.setTitle("Thank you for donation!");
-            builder.setMessage("We appreciate your support in great apps and open-source projects.\n\nHow much would you like to donate?");
-            builder.setPositiveButton("A Sandwich - 5$",
+            builder.setTitle(getString(R.string.thank_you_for_donation));
+            builder.setMessage(getString(R.string.we_appreciate_your_support));
+            builder.setPositiveButton(getString(R.string.a_sandwich),
                     new DialogInterface.OnClickListener()
                     {
                         public void onClick(DialogInterface dialog, int id)
                         {
                             dialog.cancel();
-                            startInAppPurchase("5_dollar_donation");
+                            startInAppPurchase(getString(R.string.five_dollar));
                         }
                     });
 
-            builder.setNeutralButton("A Piece of Gum - 1$",
+            builder.setNeutralButton(getString(R.string.a_piece_of_gum),
                     new DialogInterface.OnClickListener()
                     {
                         public void onClick(DialogInterface dialog, int id)
                         {
                             dialog.cancel();
-                            startInAppPurchase("1_dollar_donation");
+                            startInAppPurchase(getString(R.string.one_dollar));
                         }
                     });
 
-            builder.setNegativeButton("A Coffee - 3$",
+            builder.setNegativeButton(getString(R.string.a_coffe),
                     new DialogInterface.OnClickListener()
                     {
                         public void onClick(DialogInterface dialog, int id)
                         {
                             dialog.cancel();
-                            startInAppPurchase("3_dollar_donation");
+                            startInAppPurchase(getString(R.string.three_dollar));
                         }
                     });
             builder.create().show();
@@ -412,9 +412,9 @@ public class StickerPackListActivity extends BaseActivity {
                                 }
                             })
                             .create();
-                    alertDialog.setTitle("Notice!");
-                    alertDialog.setMessage("We've recognized you denied the storage access permission for this app."
-                            + "\n\nIn order for this app to work, storage access is required.");
+                    alertDialog.setTitle(getString(R.string.notice));
+                    alertDialog.setMessage(getString(R.string.acess_permission_denied)
+                            + getString(R.string.to_wrok_better));
                     alertDialog.show();
                 }
                 break;

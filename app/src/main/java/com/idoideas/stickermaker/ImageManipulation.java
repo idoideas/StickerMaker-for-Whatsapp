@@ -5,7 +5,6 @@ import android.graphics.Bitmap;
 import android.net.Uri;
 import android.provider.MediaStore;
 import android.util.Log;
-
 import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -14,13 +13,13 @@ import java.io.IOException;
 
 public class ImageManipulation {
 
-    public static Uri convertImageToWebP(Uri uri, String StickerBookId, String StickerId, Context context){
+    public static Uri convertImageToWebP(Uri uri, String StickerBookId, String StickerId, Context context) {
         try {
-            Bitmap bitmap = MediaStore.Images.Media.getBitmap(context.getContentResolver(),uri);
+            Bitmap bitmap = MediaStore.Images.Media.getBitmap(context.getContentResolver(), uri);
 
-            dirChecker(context.getFilesDir()+"/"+StickerBookId);
+            dirChecker(context.getFilesDir() + "/" + StickerBookId);
 
-            String path = context.getFilesDir()+"/"+StickerBookId+"/"+StickerBookId+"-"+StickerId+".webp";
+            String path = context.getFilesDir() + "/" + StickerBookId + "/" + StickerBookId + "-" + StickerId + ".webp";
 
             Log.w("Conversion Data: ", "path: " + path);
 
@@ -35,6 +34,7 @@ public class ImageManipulation {
             */
             makeSmallestBitmapCompatible(path, bitmap);
 
+
             return Uri.fromFile(new File(path));
         } catch (Exception e) {
             e.printStackTrace();
@@ -42,13 +42,13 @@ public class ImageManipulation {
         return uri;
     }
 
-    public static Uri convertIconTrayToWebP(Uri uri, String StickerBookId, String StickerId, Context context){
+    public static Uri convertIconTrayToWebP(Uri uri, String StickerBookId, String StickerId, Context context) {
         try {
-            Bitmap bitmap = MediaStore.Images.Media.getBitmap(context.getContentResolver(),uri);
+            Bitmap bitmap = MediaStore.Images.Media.getBitmap(context.getContentResolver(), uri);
 
-            dirChecker(context.getFilesDir()+"/"+StickerBookId);
+            dirChecker(context.getFilesDir() + "/" + StickerBookId);
 
-            String path = context.getFilesDir()+"/"+StickerBookId+"/"+StickerBookId+"-"+StickerId+".webp";
+            String path = context.getFilesDir() + "/" + StickerBookId + "/" + StickerBookId + "-" + StickerId + ".webp";
 
             Log.w("Conversion Data: ", "path: " + path);
 
@@ -81,7 +81,7 @@ public class ImageManipulation {
         return bos.toByteArray();
     }
 
-    private static void makeSmallestBitmapCompatible(String path, Bitmap bitmap){
+    private static void makeSmallestBitmapCompatible(String path, Bitmap bitmap) {
         int quality = 100;
         FileOutputStream outs = null;
         try {
@@ -94,7 +94,7 @@ public class ImageManipulation {
         int byteArrayLength = 100000;
         ByteArrayOutputStream bos = null;
 
-        while((byteArrayLength/1000)>=100){
+        while ((byteArrayLength / 1000) >= 100) {
             bos = new ByteArrayOutputStream();
 
             bitmap.compress(Bitmap.CompressFormat.WEBP,
@@ -102,9 +102,9 @@ public class ImageManipulation {
                     bos);
 
             byteArrayLength = bos.toByteArray().length;
-            quality-=10;
+            quality -= 10;
 
-            Log.w("IMAGE SIZE IS NOW", byteArrayLength+"");
+            Log.w("IMAGE SIZE IS NOW", byteArrayLength + "");
         }
         try {
             outs.write(bos.toByteArray());

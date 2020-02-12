@@ -79,6 +79,8 @@ public class StickerPackDetailsActivity extends BaseActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.sticker_pack_details);
 
+/*
+
         MobileAds.initialize(this, getString(R.string.admob_ad_id));
         mAdView = findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest
@@ -91,6 +93,7 @@ public class StickerPackDetailsActivity extends BaseActivity {
         mInterstitialAd.setAdUnitId(getString(R.string.admob_fullscreen_adding_pack_unit_id));
         mInterstitialAd.loadAd(new AdRequest.Builder().addTestDevice(getString(R.string.test_device)).build());
 
+ */
         boolean showUpButton = getIntent().getBooleanExtra(EXTRA_SHOW_UP_BUTTON, false);
         stickerPack = StickerBook.getStickerPackById(getIntent().getStringExtra(EXTRA_STICKER_PACK_DATA));
         TextView packNameTextView = findViewById(R.id.pack_name);
@@ -250,12 +253,13 @@ public class StickerPackDetailsActivity extends BaseActivity {
                     Log.e(TAG, "Validation failed:" + validationError);
                 }
             } else {
-                if (mInterstitialAd.isLoaded()) {
+/*                if (mInterstitialAd.isLoaded()) {
                     mInterstitialAd.show();
                     mInterstitialAd = new InterstitialAd(this);
                     mInterstitialAd.setAdUnitId(getString(R.string.admob_fullscreen_adding_pack_unit_id));
                     mInterstitialAd.loadAd(new AdRequest.Builder().addTestDevice(getString(R.string.test_device)).build());
                 }
+*/
             }
         } else if(requestCode == 3000){
             if(data!=null){

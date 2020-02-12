@@ -75,7 +75,7 @@ public class StickerPreviewAdapter extends RecyclerView.Adapter<StickerPreviewVi
                 ImageView image = new ImageView(thisContext);
                 image.setImageURI(thisSticker.getUri());
                 AlertDialog alertDialog = new AlertDialog.Builder(thisContext)
-                        .setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+                        .setNegativeButton(thisContext.getString(R.string.cancel), new DialogInterface.OnClickListener() {
                             @Override
                             public void onClick(DialogInterface dialogInterface, int i) {
                                 dialogInterface.dismiss();

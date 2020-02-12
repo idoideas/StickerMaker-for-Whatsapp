@@ -63,4 +63,15 @@
     <string name="are_you_sure">Você tem certeza?</string>
     <string name="deleting_this_package_will_also_removeit">A exclusão deste pacote também o removerá do seu aplicativo do WhatsApp.</string>
     <string name="confirm">Confirmar</string>
+
+    <string name="thank_you_for_donation">Obrigado pela doação!</string>
+    <string name="we_appreciate_your_support">Agradecemos seu apoio em ótimos aplicativos e projetos de código aberto. Quanto você gostaria de doar?</string>
+    <string name="a_sandwich">Um sanduíche - 5$</string>
+    <string name="five_dollar">Doe 5 dólares</string>
+    <string name="a_piece_of_gum">Um clichete - 1$</string>
+    <string name="one_dollar">Doe 1 dólar</string>
+    <string name="a_coffe">Um café - 3$</string>
+    <string name="three_dollar">Doe 3 dólares</string>
+    <string name="acess_permission_denied">Reconhecemos que você negou a permissão de acesso ao armazenamento para este aplicativo.</string>
+    <string name="to_wrok_better">Para que este aplicativo funcione, é necessário acesso ao armazenamento.</string>
 </resources>
