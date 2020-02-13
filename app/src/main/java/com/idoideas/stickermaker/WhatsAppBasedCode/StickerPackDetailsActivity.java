@@ -79,6 +79,8 @@ public class StickerPackDetailsActivity extends BaseActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.sticker_pack_details);
 
+/*
+
         MobileAds.initialize(this, getString(R.string.admob_ad_id));
         mAdView = findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest
@@ -91,6 +93,7 @@ public class StickerPackDetailsActivity extends BaseActivity {
         mInterstitialAd.setAdUnitId(getString(R.string.admob_fullscreen_adding_pack_unit_id));
         mInterstitialAd.loadAd(new AdRequest.Builder().addTestDevice(getString(R.string.test_device)).build());
 
+ */
         boolean showUpButton = getIntent().getBooleanExtra(EXTRA_SHOW_UP_BUTTON, false);
         stickerPack = StickerBook.getStickerPackById(getIntent().getStringExtra(EXTRA_STICKER_PACK_DATA));
         TextView packNameTextView = findViewById(R.id.pack_name);
@@ -134,8 +137,8 @@ public class StickerPackDetailsActivity extends BaseActivity {
                                     dialogInterface.dismiss();
                                 }
                             }).create();
-                    alertDialog.setTitle("Invalid Action");
-                    alertDialog.setMessage("In order to be applied to WhatsApp, the sticker pack must have at least 3 stickers. Please add more stickers first.");
+                    alertDialog.setTitle(getString(R.string.invalid_action));
+                    alertDialog.setMessage(getString(R.string.in_order_to_be_applied));
                     alertDialog.show();
                 }
             }
@@ -158,7 +161,7 @@ public class StickerPackDetailsActivity extends BaseActivity {
                                 dialogInterface.dismiss();
                             }
                         })
-                        .setPositiveButton("Confirm", new DialogInterface.OnClickListener() {
+                        .setPositiveButton(getString(R.string.confirm), new DialogInterface.OnClickListener() {
                             @Override
                             public void onClick(DialogInterface dialogInterface, int i) {
                                 dialogInterface.dismiss();
@@ -167,11 +170,11 @@ public class StickerPackDetailsActivity extends BaseActivity {
                                 Intent intent = new Intent(StickerPackDetailsActivity.this, StickerPackListActivity.class);
                                 intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
                                 startActivity(intent);
-                                Toast.makeText(StickerPackDetailsActivity.this, "Sticker Pack deleted", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(StickerPackDetailsActivity.this, getString(R.string.sticker_pack_deleted), Toast.LENGTH_SHORT).show();
                             }
                         }).create();
-                alertDialog.setTitle("Are you sure?");
-                alertDialog.setMessage("Deleting this package will also remove it from your WhatsApp app.");
+                alertDialog.setTitle(getString(R.string.are_you_sure));
+                alertDialog.setMessage(getString(R.string.deleting_this_package_will_also_removeit));
                 alertDialog.show();
             }
         });
@@ -250,12 +253,13 @@ public class StickerPackDetailsActivity extends BaseActivity {
                     Log.e(TAG, "Validation failed:" + validationError);
                 }
             } else {
-                if (mInterstitialAd.isLoaded()) {
+/*                if (mInterstitialAd.isLoaded()) {
                     mInterstitialAd.show();
                     mInterstitialAd = new InterstitialAd(this);
                     mInterstitialAd.setAdUnitId(getString(R.string.admob_fullscreen_adding_pack_unit_id));
                     mInterstitialAd.loadAd(new AdRequest.Builder().addTestDevice(getString(R.string.test_device)).build());
                 }
+*/
             }
         } else if(requestCode == 3000){
             if(data!=null){

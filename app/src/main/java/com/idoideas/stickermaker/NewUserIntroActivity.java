@@ -35,20 +35,21 @@ public class NewUserIntroActivity extends IntroActivity {
 
         setButtonBackVisible(false);
         addSlide(new SimpleSlide.Builder()
-                .title("Welcome to StickerMaker for WhatsApp!")
-                .description("The perfect solution for making and sharing your own WhatsApp sticker packs!")
+                .title(R.string.welcome_to_stickerMaker)
+                .description(R.string.the_perfect_solution)
                 .image(R.drawable.stickermakerlogo)
                 .background(R.color.colorAccent)
                 .scrollable(false)
                 .build());
 
+/*
         if(!checkIfBatteryOptimizationIgnored() && Build.VERSION.SDK_INT >= Build.VERSION_CODES.M){
             addSlide(new SimpleSlide.Builder()
-                    .title("We've recognized our app is optimized by Android's Doze system.")
-                    .description("In order for the app to work correctly, please disable the optimization for \"StickerMaker\" after clicking the button.")
+                    .title(R.string.We_recognized)
+                    .description(R.string.in_order_battery)
                     .background(R.color.colorAccent)
                     .scrollable(false)
-                    .buttonCtaLabel("Let's Go")
+                    .buttonCtaLabel(R.string.lets_go)
                     .buttonCtaClickListener(new View.OnClickListener() {
                         @Override
                         public void onClick(View view) {
@@ -59,16 +60,17 @@ public class NewUserIntroActivity extends IntroActivity {
                     })
                     .build());
         }
+*/
 
         int permission = ActivityCompat.checkSelfPermission(this, Manifest.permission.WRITE_EXTERNAL_STORAGE);
 
         if (permission != PackageManager.PERMISSION_GRANTED) {
             addSlide(new SimpleSlide.Builder()
-                    .title("We need to save and fetch your stickers!")
-                    .description("In order for the app to work correctly, please allow the write and read storage permissions.")
+                    .title(R.string.we_need)
+                    .description(R.string.in_order_storage)
                     .background(R.color.colorAccent)
                     .scrollable(false)
-                    .buttonCtaLabel("Grant Permissions")
+                    .buttonCtaLabel(R.string.grant_permissions)
                     .buttonCtaClickListener(new View.OnClickListener() {
                         @Override
                         public void onClick(View view) {
@@ -79,11 +81,11 @@ public class NewUserIntroActivity extends IntroActivity {
         }
 
         addSlide(new SimpleSlide.Builder()
-                .title("Everything is set!")
-                .description("You can start creating your sticker packs!\n\n" +
-                        "Please notice! Sticker packs created or loaded with the app require the app being installed on device.\n\n" +
-                        "Uninstalling the app will cause of removing the sticker packs from your WhatsApp client " +
-                        "and will be lost if they weren't shared.")
+                .title(R.string.everything_is_set)
+                .description(getString(R.string.you_can_start) + "\n"+
+                        getString(R.string.please_notice) +
+                        getString(R.string.uninstalling_the_app) + " "+
+                        getString(R.string.and_will_be_lost))
                 .background(R.color.colorAccent)
                 .scrollable(false)
                 .build());
@@ -101,7 +103,6 @@ public class NewUserIntroActivity extends IntroActivity {
                 } else {
                     setNavigation(true, false);
                 }
-
 
             }
 
@@ -174,15 +175,15 @@ public class NewUserIntroActivity extends IntroActivity {
             case 1:
                 if (grantResults[0] != PackageManager.PERMISSION_GRANTED) {
                     AlertDialog alertDialog = new AlertDialog.Builder(this)
-                            .setPositiveButton("Let's Go", new DialogInterface.OnClickListener() {
+                            .setPositiveButton(R.string.lets_go, new DialogInterface.OnClickListener() {
                                 @Override
                                 public void onClick(DialogInterface dialogInterface, int i) {
                                     verifyStoragePermissions(NewUserIntroActivity.this);
                                 }
                             })
                             .create();
-                    alertDialog.setTitle("Notice!");
-                    alertDialog.setMessage("Allowing storage permissions is crucial for the app to work. Please grant the permissions.");
+                    alertDialog.setTitle(getString(R.string.notice));
+                    alertDialog.setMessage(getString(R.string.allowing_storage_permissions));
                     alertDialog.show();
                 } else {
                     setNavigation(true, false);

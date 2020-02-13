@@ -75,13 +75,13 @@ public class StickerPreviewAdapter extends RecyclerView.Adapter<StickerPreviewVi
                 ImageView image = new ImageView(thisContext);
                 image.setImageURI(thisSticker.getUri());
                 AlertDialog alertDialog = new AlertDialog.Builder(thisContext)
-                        .setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+                        .setNegativeButton(thisContext.getString(R.string.cancel), new DialogInterface.OnClickListener() {
                             @Override
                             public void onClick(DialogInterface dialogInterface, int i) {
                                 dialogInterface.dismiss();
                             }
                         })
-                        .setPositiveButton("Confirm", new DialogInterface.OnClickListener() {
+                        .setPositiveButton(thisContext.getString(R.string.confirm), new DialogInterface.OnClickListener() {
                             @Override
                             public void onClick(DialogInterface dialogInterface, int i) {
                                 if(stickerPack.getStickers().size()>3 || !WhitelistCheck.isWhitelisted(thisContext, stickerPack.getIdentifier())){
@@ -90,7 +90,7 @@ public class StickerPreviewAdapter extends RecyclerView.Adapter<StickerPreviewVi
                                     Activity thisActivity = ((Activity)thisContext);
                                     thisActivity.finish();
                                     thisActivity.startActivity(thisActivity.getIntent());
-                                    Toast.makeText(thisContext, "Sticker Pack deleted", Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(thisContext, thisActivity.getString(R.string.sticker_pack_deleted), Toast.LENGTH_SHORT).show();
                                 } else {
                                     AlertDialog alertDialog = new AlertDialog.Builder(thisContext)
                                             .setNegativeButton("Ok", new DialogInterface.OnClickListener() {
@@ -99,17 +99,17 @@ public class StickerPreviewAdapter extends RecyclerView.Adapter<StickerPreviewVi
                                                     dialogInterface.dismiss();
                                                 }
                                             }).create();
-                                    alertDialog.setTitle("Invalid Action");
-                                    alertDialog.setMessage("A sticker pack that is already applied to WhatsApp cannot have less than 3 stickers. " +
-                                            "In order to remove additional stickers, please add more to the pack first or remove the pack from the WhatsApp app.");
+                                    alertDialog.setTitle(thisContext.getString(R.string.invalid_action));
+                                    alertDialog.setMessage(thisContext.getString(R.string.a_sticker_pack_that) +
+                                            thisContext.getString(R.string.in_order_to_remove_additional));
                                     alertDialog.show();
                                 }
                             }
                         })
                         .setView(image)
                         .create();
-                alertDialog.setTitle("Do you want to delete this sticker?");
-                alertDialog.setMessage("Deleting this sticker will also remove it from your WhatsApp app.");
+                alertDialog.setTitle(thisContext.getString(R.string.do_you_want_to_delete_this));
+                alertDialog.setMessage(thisContext.getString(R.string.deleting_this_sticker_will_also_remove));
                 alertDialog.show();
             }
         });

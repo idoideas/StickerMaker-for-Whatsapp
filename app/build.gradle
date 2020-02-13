@@ -60,4 +60,5 @@ dependencies {
     implementation 'com.heinrichreimersoftware:material-intro:1.6'
     implementation 'com.android.billingclient:billing:1.0'
     implementation 'com.github.iammert:MaterialIntroView:1.6.0'
+
 }
